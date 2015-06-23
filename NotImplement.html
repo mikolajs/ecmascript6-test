@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>testowanie ecmascript 6</title>
+</head>
+  <body>
+    <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+    <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
+    <h2>Słowo kluczowe klas</h2>
+    <p >Długość wektora: <span id="classInfo"></span></p>
+    <script type="module" src="./test.js">  </script>
+    <h2>Słowo let</h2>
+    <p> Zwykła zmienna: <span id="var"></span><br/>
+     Zmienna oznaczona let: <span id="let"></span>
+    </p>
+    <script type="module">
+
+
+       if(true){
+         let tmp1 = "let!";
+         var tmp2 = "var!";
+       }
+         let element = document.querySelector('#var');
+         element.innerHTML = tmp2;
+         //element = document.querySelector('#let');
+         //element.innerHTML = tmp1;
+
+
+
+    </script>
+
+  </body>
+</html>
